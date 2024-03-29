@@ -16,7 +16,7 @@ import (
 )
 
 const (
-  semVer = "0.2.1"
+  semVer = "0.2.2"
   progName = "fiwatcherd"
 )
 
@@ -26,6 +26,7 @@ var flagVersion bool
 var flagDebug bool
 var flagFix bool
 var flagIncrement  bool
+// var flagIncAmount int 
 var flagTickrate int
 var argFilename string
 
@@ -147,6 +148,8 @@ func incrementFileContent(input string) (string, error) {
     return "", err
   }
 
+  intVal++
+  intVal++
   intVal++
 
   strVal := strconv.Itoa(intVal)
