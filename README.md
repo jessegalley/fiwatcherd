@@ -1,6 +1,5 @@
 # fiwatcherd
 
-
 ## File Integrity Watcher Daemon
 
 A simple lightweight service to watch one or more files for changes, and either alert or take action when they do.
